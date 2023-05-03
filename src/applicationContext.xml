@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<!-- 
+ <bean id="studentbean" class="spring_core.Student">  
+<property name="name" value="Pawan Sanap"></property>  
+</bean>  
+
+
+ <bean id="employeebean" class="spring_core.Employee">  
+<constructor-arg value="10" type="int"></constructor-arg> 
+<constructor-arg value="Pawan" type="String"></constructor-arg>
+</bean> 
+
+
+<bean id="setterbean1" class="spring.DI.setter.Emp">  
+<property name="id"><value>20</value></property>
+<property name="name"><value>Pawan Sanap</value></property>
+<property name="city"><value>Pune</value></property>
+</bean> 
+-->
+
+<!--
+ <bean id="cido" class="spring.cido.Address">  
+<constructor-arg value="Pune"></constructor-arg>
+<constructor-arg value="Maharastra"></constructor-arg>
+<constructor-arg value="India"></constructor-arg> 
+</bean>
+
+<bean id="cido2" class="spring.cido.Employees">  
+<constructor-arg value="10" type="int"></constructor-arg>
+<constructor-arg value="Pawan S"></constructor-arg>
+<constructor-arg><ref bean="cido"/> </constructor-arg>  
+</bean>
+-->
+<!--
+<bean id="coc" class="spring.constructor.injection.collections.Question">
+	<constructor-arg value="12"></constructor-arg>
+	<constructor-arg value="What is Java ?"></constructor-arg>
+	<constructor-arg>
+		<list>
+			<value>Java is Programming Lang..</value>
+			<value>Java is Country..</value>
+			<value>Java is city of India..</value>
+		</list>
+	</constructor-arg>
+</bean>
+-->
+<!-- 
+<bean id="ans1" class="spring.constructor.injection.collections.Answer">
+	<constructor-arg value="1"></constructor-arg>
+	<constructor-arg value="Java is Programming Lang..."></constructor-arg>
+	<constructor-arg value="Pawan"></constructor-arg>
+</bean>
+<bean id="ans2" class="spring.constructor.injection.collections.Answer">
+	<constructor-arg value="2"></constructor-arg>
+	<constructor-arg value="Java is Country..."></constructor-arg>
+	<constructor-arg value="Hello"></constructor-arg>
+</bean>
+<bean id="ans3" class="spring.constructor.injection.collections.Question2">
+	<constructor-arg value="3"></constructor-arg>
+	<constructor-arg value="What is Java???"></constructor-arg>
+	<constructor-arg>
+		<list>
+			<ref bean="ans1"/>
+			<ref bean="ans2"/>
+		</list>
+	</constructor-arg>
+	
+</bean>
+-->
+<!-- 
+  <bean id="ans1" class="spring.constructor.injection.collections.map.MapQuestion">
+	  <constructor-arg value="1"></constructor-arg>
+	  <constructor-arg value="What is Java??"></constructor-arg>
+	  <constructor-arg>
+		  <map>
+			  <entry key="Java is Programming lang..." value="Pawan"></entry>
+			  <entry key="Java is Bus Stop.." value="ABC"></entry>
+			  <entry key="Java is country..." value="XYZ"></entry>
+		  </map>
+	  </constructor-arg>
+  </bean>
+  -->
+  <!-- 
+  <bean id="a1" class="spring.inherite.bean.Employee">
+	  <constructor-arg value="1"></constructor-arg>
+	  <constructor-arg value="Pawan"></constructor-arg>
+  </bean>
+  <bean id="b1" class="spring.inherite.bean.Address">
+	  <constructor-arg value="Gensh Nagar"></constructor-arg>
+	  <constructor-arg value="Pune"></constructor-arg>
+	  <constructor-arg value="Maharastra"></constructor-arg>
+	  <constructor-arg value="India"></constructor-arg>
+  </bean>
+  <bean id="c3" class="spring.inherite.bean.Employee" parent="a1">
+	  <constructor-arg ref="b1"></constructor-arg>
+  </bean>
+  -->
+  <!-- 
+  <bean id="a1" class="spring.setter.injection.Employees">
+	  <property name="id"><value>11</value></property>
+	  <property name="name"><value>Pawan Sanap</value></property>
+	  <property name="city"><value>Pune</value></property>
+  </bean>
+  -->
+  <!-- 
+  <bean id="autowiring_B" class="spring.autowiring.Autowiring_B"></bean>
+  <bean id="autowiring_A" class="spring.autowiring.Autowiring_A" autowire="byName"></bean>
+  -->
+  <!-- 
+  <bean id="a" class="spring.factory.method.Factory_A" factory-method="getFactory_A"></bean>
+  -->
+  <bean id="p" class="spring.staticfactory.another.object.PrintFactory" factory-method="getPrint"></bean>
+  
+  
+  
+  
+</beans>  
