@@ -19,7 +19,8 @@ public class Question {
 	}
 	
 	public void displayInfo() {
-		System.out.println(id+" "+ name);
+		System.out.println(id+"");
+		System.out.println(name+"");
 		System.out.println("answer are:");
 		Iterator<String> itr = answer.iterator();
 		while (itr.hasNext()) {

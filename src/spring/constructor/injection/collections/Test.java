@@ -12,11 +12,11 @@ public class Test {
 		Resource resource = new ClassPathResource("applicationContext.xml");
 		BeanFactory factory = new XmlBeanFactory(resource);
 		
-//		Question question =(Question)factory.getBean("coc");
-//		question.displayInfo();
+		Question question =(Question)factory.getBean("coc");
+		question.displayInfo();
 		
-		Question2 question2 =(Question2)factory.getBean("ans3");
-		question2.displayInfo();
+//		Question2 question2 =(Question2)factory.getBean("ans3");
+//		question2.displayInfo();
 
 	}
 

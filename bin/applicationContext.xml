@@ -38,7 +38,7 @@
 <constructor-arg><ref bean="cido"/> </constructor-arg>  
 </bean>
 -->
-<!--
+
 <bean id="coc" class="spring.constructor.injection.collections.Question">
 	<constructor-arg value="12"></constructor-arg>
 	<constructor-arg value="What is Java ?"></constructor-arg>
@@ -50,7 +50,7 @@
 		</list>
 	</constructor-arg>
 </bean>
--->
+
 <!-- 
 <bean id="ans1" class="spring.constructor.injection.collections.Answer">
 	<constructor-arg value="1"></constructor-arg>
